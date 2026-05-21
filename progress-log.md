@@ -21,3 +21,33 @@
 - Analyzed a simulated breach using perimeter logs (firewall, IDS, and VPN logs)
 
 ## Week 3
+
+- Learned about cyber defence frameworks:
+  - Pyramid of Pain
+  - Cyber Kill Chain
+  - Unified Kill Chain
+  - MITRE ATT&CK
+- Learned how attackers operate across different phases and how defenders map detections to attacker behavior.
+- - Completed phishing analysis learning:
+  - phishing fundamentals
+  - phishing tools and investigation workflow
+  - phishing prevention techniques (SPF, DKIM, DMARC, S/MIME)
+- Practiced identifying phishing indicators and analyzing email-based threats
+
+## Week 4 (ongoing)
+
+- Learned and practiced detection of:
+  - network discovery / scanning activity
+  - data exfiltration techniques
+  - man-in-the-middle attacks
+  - web security risks and attack patterns
+- Studied Snort IDS/IPS:
+  - rules and actions
+  - IDS vs IPS behavior
+  - sniffing, logging, and alerting modes
+  - traffic inspection workflows
+- Learned web security fundamentals:
+  - application vs server vs host layers
+  - CDNs and WAFs
+  - client-side vs server-side attacks
+  - web attack detection techniques
