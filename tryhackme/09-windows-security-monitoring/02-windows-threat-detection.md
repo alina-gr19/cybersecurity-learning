@@ -7,7 +7,6 @@
 - Windows hides known file extensions by default, which attackers can abuse by disguising malicious executables as legitimate files such as:
   - `invoice.pdf.exe`
   - `photo.png.com`
-
 - Attackers may also change file icons to make malicious files appear trustworthy.
 
 ---
@@ -18,20 +17,36 @@
   → the stage where an attacker first gains access to a target system or environment
 
 - RDP (Remote Desktop Protocol)  
-  → Microsoft protocol that allows remote access and administration of systems
+  → Microsoft protocol that allows remote remote administration of systems
 
 - Phishing  
-  → social engineering technique used to trick users into opening malicious files, links, or attachments
+  → social engineering technique used to trick users into executing malicious files or clicking malicious links
 
 - File extension spoofing  
-  → technique where attackers disguise malicious executables as harmless files by abusing hidden file extensions
+  → technique where attackers disguise malicious executables by abusing hidden file extensions
+
+---
+
+### Post-compromise activity
+
+- Discovery  
+  → the stage after initial access where attackers explore the system and environment
+
+- Collection  
+  → gathering useful data from the compromised system
+
+- Credential Access  
+  → techniques used to steal usernames, passwords, or authentication tokens
+
+- Exfiltration  
+  → transferring stolen data out of the target environment
 
 ---
 
 ## Why it matters in SOC
 
-- Detecting initial access activity is critical because it can stop an attack before privilege escalation or lateral movement occurs.
-- SOC analysts monitor authentication logs, suspicious logins, phishing indicators, and unusual process execution to identify compromise attempts.
+- Detecting initial access early can stop an attack before escalation or lateral movement occurs.
+- SOC analysts monitor authentication logs, process execution, and suspicious access patterns to identify compromise attempts.
 
 ---
 
@@ -48,5 +63,5 @@
 
 ## Personal notes
 
-- Simple techniques such as hidden file extensions can still be highly effective in phishing attacks.
-- Monitoring RDP activity is important because it is frequently targeted by attackers and ransomware groups.
+- Simple tricks like hiding file extensions are still effective in phishing campaigns.
+- RDP monitoring is important because it is frequently abused in real-world attacks.
