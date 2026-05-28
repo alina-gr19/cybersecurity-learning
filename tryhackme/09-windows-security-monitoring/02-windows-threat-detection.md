@@ -7,49 +7,50 @@
 - Windows hides known file extensions by default, which attackers can abuse by disguising malicious executables as legitimate files such as:
   - `invoice.pdf.exe`
   - `photo.png.com`
+
 - Attackers may also change file icons to make malicious files appear trustworthy.
 
 ---
 
 ## Key concepts
 
-- Initial Access  
+- Initial Access
   → the stage where an attacker first gains access to a target system or environment
 
-- RDP (Remote Desktop Protocol)  
-  → Microsoft protocol that allows remote remote administration of systems
+- RDP (Remote Desktop Protocol)
+  → Microsoft protocol that allows remote administration of systems
 
-- Phishing  
+- Phishing
   → social engineering technique used to trick users into executing malicious files or clicking malicious links
 
-- File extension spoofing  
+- File extension spoofing
   → technique where attackers disguise malicious executables by abusing hidden file extensions
 
-- Command and Control
-  - how threat actors send the commands and keep control of the victim's host
-  - In some cases, C2 is not needed at all. For example, threat actors can type their commands directly in the RDP session after an RDP breach
+- Command and Control (C2)
+  → method attackers use to send commands to and maintain control over a compromised system
+  - In some cases, C2 is not needed. For example, attackers may directly execute commands through an RDP session after gaining access.
 
 ---
 
 ### Post-compromise activity
 
-- Discovery  
-  → the stage after initial access where attackers explore the system and environment
+- Discovery
+  → stage where attackers explore the compromised environment and identify valuable targets
 
-- Collection  
-  → gathering useful data from the compromised system
+- Collection
+  → gathering useful or sensitive data from the compromised system
 
-- Credential Access  
+- Credential Access
   → techniques used to steal usernames, passwords, or authentication tokens
 
-- Exfiltration  
+- Exfiltration
   → transferring stolen data out of the target environment
 
 ---
 
 ## Why it matters in SOC
 
-- Detecting initial access early can stop an attack before escalation or lateral movement occurs.
+- Detecting initial access early can stop attacks before privilege escalation or lateral movement occurs.
 - SOC analysts monitor authentication logs, process execution, and suspicious access patterns to identify compromise attempts.
 
 ---
@@ -68,4 +69,4 @@
 ## Personal notes
 
 - Simple tricks like hiding file extensions are still effective in phishing campaigns.
-- RDP monitoring is important because it is frequently abused in real-world attacks.
+- Monitoring RDP activity is important because it is frequently abused in real-world attacks.
