@@ -53,6 +53,15 @@
 | 11 / 13 (Sysmon) | File creation and registry modification |
 | 3 / 22 (Sysmon)  | Network connections and DNS queries     |
 
+## Persistence
+
+| Persistence Method                                    | Attack Example                                                                                         | Event ID Logging                                                                                                |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| Create a Windows Service (runs after OS startup)      | `sc create "BadService" binpath= "C:\malware.exe" start= auto`                                         | `Sysmon Event ID 1` (process creation of `sc.exe`) and `Security Event ID 4697` (service creation)              |
+| Create a Scheduled Task (runs after OS startup)       | `schtasks /create /tn "BadTask" /tr "C:\malware.exe" /sc onstart /ru System`                           | `Sysmon Event ID 1` (process creation of `schtasks.exe`) and `Security Event ID 4698` (scheduled task creation) |
+| Add malware to Startup Folder (runs after user login) | `copy C:\malware.exe "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup\malware.exe"`            | `Sysmon Event ID 11` (file creation)                                                                            |
+| Add malware to Run Keys (runs after user login)       | `reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v BadKey /t REG_SZ /d "C:\malware.exe"` | `Sysmon Event ID 13` (registry modification)                                                                    |
+
 ---
 
 ## Why it matters in SOC

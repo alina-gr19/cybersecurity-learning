@@ -25,6 +25,10 @@
 - File extension spoofing  
   → technique where attackers disguise malicious executables by abusing hidden file extensions
 
+- Command and Control
+  - how threat actors send the commands and keep control of the victim's host
+  - In some cases, C2 is not needed at all. For example, threat actors can type their commands directly in the RDP session after an RDP breach
+
 ---
 
 ### Post-compromise activity
