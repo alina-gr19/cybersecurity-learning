@@ -6,6 +6,8 @@
 - Web applications can also be used as an Initial Access vector when vulnerabilities are exploited.
 - Process tree analysis is a useful technique for investigating attacker activity and tracing actions back to their origin.
 - Analyzing parent-child process relationships can help identify suspicious command execution and malware activity.
+- The next step after Initial Access is often Discovery, which can be identified through commands such as `pwd`, `whoami`, `hostname`, `id`, and `ip a`.
+- After Discovery, threat actors often reveal their objectives by installing malware or performing actions related to their goals.
 
 ---
 
@@ -26,8 +28,24 @@
 - Child Process
   → process launched by another process
 
+- Discovery
+  → phase where attackers gather information about the compromised host, users, network, and available resources
+
 - Persistence
   → techniques used by attackers to maintain access to a compromised system after a reboot or logout
+
+---
+
+## Common attacker objectives
+
+- Cryptomining
+  → using the victim's CPU or GPU resources to mine cryptocurrency
+
+- Botnet Enrollment
+  → adding the compromised host to a botnet to participate in activities such as DDoS attacks
+
+- Proxying
+  → using the victim machine to relay malicious traffic, host malware, or send phishing campaigns
 
 ---
 
