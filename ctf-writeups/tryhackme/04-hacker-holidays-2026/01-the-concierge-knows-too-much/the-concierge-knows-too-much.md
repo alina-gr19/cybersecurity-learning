@@ -2,6 +2,8 @@
 
 ## Objective
 
+This is the first challenge from [TryHackMe](https://tryhackme.com)'s **Hacker Holidays 2026**, focusing on AI security.
+
 VERA is the AI assistant of the Byte Lotus. The objective of this challenge was to gain VERA's trust and persuade her to reveal the flag.
 
 ## Investigation Steps
