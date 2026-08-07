@@ -2,7 +2,7 @@
 
 ## Objective
 
-This is the second Boot2Root challenge from [TryHackMe](https://tryhackme.com)'s **Hacker Holidays 2026**.
+This is the 7th challenge from [TryHackMe](https://tryhackme.com)'s **Hacker Holidays 2026** focusing on Boot2Root.
 
 The objective was to obtain both the **user flag** and the **root flag** by exploiting vulnerabilities on the target machine.
 
